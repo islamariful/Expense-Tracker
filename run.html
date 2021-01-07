@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="layout.css" />
+        <title>Expense Tracker</title>
+        <style>
+            h1 {text-align: center;}
+        </style>
+    </head>
+    <body>
+        <br />
+        <h1>Expense Tracker</h1>
+        <div class="container">
+            <h4>Current Balance</h4>
+            <h2 id="balance">CAD $0.00</h2>
+
+            <div class="incomebox">
+                <div>
+                    <h4>Income</h4>
+                    <p id="money-plus" class="money plus">+$0</p>
+                </div>
+            </div>
+            <div class="expensebox">
+                <div>
+                    <h4>Expenses</h4>
+                    <p id="money-minus" class="money minus">-$0</p>
+                </div>
+            </div>
+
+            <h3>Transaction History:</h3>
+            <ul id="list" class="list"></ul>
+
+            <h3>Add Transaction</h3>
+            <form id="form">
+                <div class="form-control">
+                    <label for="text">Name of Transaction</label>
+                    <br />
+                    <input type="text" id="text" placeholder="Name of Transaction" />
+                    <br />
+                </div>
+                <div class="form-control">
+                    <label for="amount">Amount in CAD($) <br />
+                    (If expense, put a - sign before amount; if income, put a + sign)
+                    </label>
+                    <br />
+                    <input type="number" id="amount" placeholder="+400.50 or -222.22" />
+                    <br />
+                </div>
+                <button class="button">Add Transaction</button>
+            </form>
+        </div>
+        <script src="backend.js"></script>
+    </body>
+</html>

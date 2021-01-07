@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+:root
+
+body {
+    background-color: #f9f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    margin: 30px auto;
+    width: 350px;
+}
+.incomebox {
+    background-color: white;
+    box-shadow: 5px 5px #2ecc71;
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.expensebox {
+    background-color: white;
+    box-shadow: 5px 5px red;
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.money {
+    font-size: medium;
+    letter-spacing: normal;
+    margin: auto;
+}
+.money.income {
+    color: #2ecc71;
+}
+.money.expense {
+    color: red;
+}
+label {
+    display: inline-block;
+    margin: auto;
+}
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+.button{
+    background-color: #ffc400;
+    color: black;
+    display: block;
+    font-size: medium;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+.list li {
+    background-color: whitesmoke;
+    outline: 2px black;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+.list li.plus {
+    box-shadow: 3px 3px #2ecc71;
+}
+.list li.minus {
+    box-shadow: 3px 3px red;
+}
+.deletebutton {
+    background-color: #ce0000;
+    color: white;
+    font-size: medium;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    transition: 0.5s ease-out;
+}
